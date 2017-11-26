@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="../../assets/css/custom.css" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
+
+    <!-- jQuery library -->
+    <script src="../../assets/js/jquery-3.2.1.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="../../assets/js/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="../../assets/js/bootstrap.min.js"></script>
+
+
+</h:head>
+<h:body>
+    <div id="section-header">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container">
+                <!-- Brand -->
+                <a class="navbar-brand" href="../../index.jsf">Logo</a>
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.jsf">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../jsf/login.jsf">Login</a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <div id="section-body" class="mb-5">
+        <ui:insert name="section-body" />
+    </div>
+
+    <ui:insert name="section-footer" />
+
+</h:body>
+</html>
