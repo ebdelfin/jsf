@@ -1,0 +1,20 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+                template="WEB-INF/template.xhtml">
+
+    <ui:define name="navbar-title">
+        Log In
+    </ui:define>
+
+    <ui:define name="content">
+        <h1>Log In</h1>
+        <div class="alert alert-danger">
+            <strong>Error!</strong> Invalid username or password. Please try again.
+        </div>
+        <a class="btn btn-link" href="index.jsf">Go Back</a>
+    </ui:define>
+
+</ui:composition>
