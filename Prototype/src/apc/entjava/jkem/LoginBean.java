@@ -1,7 +1,7 @@
-package apc.entjava.logindemo;
+package apc.entjava.jkem;
 
-import apc.entjava.logindemo.dataobjects.LoginDao;
-import apc.entjava.logindemo.services.LoginService;
+import apc.entjava.jkem.dataobjects.LoginDao;
+import apc.entjava.jkem.services.LoginService;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
@@ -45,7 +45,7 @@ public class LoginBean {
     public String login(){
         if(loginService.login(userName, password)){
             authBean.setLoggedUserName(userName);
-            return "protected/mainpage";
+            return "protected/dashboard";
         }else {
             return "error";
         }

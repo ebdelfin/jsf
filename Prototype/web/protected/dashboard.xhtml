@@ -1,6 +1,24 @@
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
                 xmlns:ui="http://xmlns.jcp.org/jsf/facelets" xmlns:h="http://java.sun.com/jsf/html"
-                template="templates/template.xhtml" xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+                template="../WEB-INF/templates/template.xhtml"
+                xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+
+    <ui:define name="navbar">
+        <li class="active"><a href="logout.jsf">Log Out</a></li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown mx-2">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                Dropdown
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+        </li>
+    </ui:define>
+
 
     <ui:define name="section-body">
         <div class="container mt-5">

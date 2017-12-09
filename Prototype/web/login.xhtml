@@ -1,6 +1,6 @@
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
                 xmlns:ui="http://xmlns.jcp.org/jsf/facelets" xmlns:h="http://java.sun.com/jsf/html"
-                template="templates/template.xhtml" xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+                template="WEB-INF/templates/template.xhtml" xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
 
     <ui:define name="section-body">
         <div class="container">
@@ -17,7 +17,7 @@
                     </div>
 
                     <div class="row justify-content-center">
-                        <h:button value="Sign in" styleClass="btn btn-primary "/>
+                        <h:commandButton styleClass="btn btn-primary" value="Log In" action="#{loginBean.login}" />
                     </div>
 
                 </h:form>
