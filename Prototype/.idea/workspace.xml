@@ -27,7 +27,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mainDashboard.xhtml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mainDashboard.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/protected/mainDashboard.xhtml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="493">
@@ -37,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="availableCourses.xhtml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="availableCourses.xhtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/protected/snippets/availableCourses.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1802">
-              <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+            <state relative-caret-position="833">
+              <caret line="49" column="60" lean-forward="false" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -96,8 +96,8 @@
         <option value="$PROJECT_DIR$/web/assets/css/demo.css" />
         <option value="$PROJECT_DIR$/web/assets/css/custom.css" />
         <option value="$PROJECT_DIR$/web/WEB-INF/templates/template.xhtml" />
-        <option value="$PROJECT_DIR$/web/protected/snippets/availableCourses.xhtml" />
         <option value="$PROJECT_DIR$/web/protected/mainDashboard.xhtml" />
+        <option value="$PROJECT_DIR$/web/protected/snippets/availableCourses.xhtml" />
       </list>
     </option>
   </component>
@@ -180,6 +180,13 @@
               <item name="Prototype" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="protected" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="protected" type="462c0819:PsiDirectoryNode" />
+              <item name="course" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Prototype" type="b2602c69:ProjectViewProjectNode" />
@@ -402,12 +409,12 @@
       <updated>1515142583374</updated>
       <workItem from="1515142587428" duration="24000" />
       <workItem from="1515142627928" duration="209000" />
-      <workItem from="1515143117877" duration="3709000" />
+      <workItem from="1515143117877" duration="3913000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3942000" />
+    <option name="totallyTimeSpent" value="4146000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -497,18 +504,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/protected/snippets/availableCourses.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1802">
-          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/protected/mainDashboard.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="6" lean-forward="true" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/protected/snippets/availableCourses.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="60" lean-forward="false" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
           <folding />
         </state>
       </provider>
