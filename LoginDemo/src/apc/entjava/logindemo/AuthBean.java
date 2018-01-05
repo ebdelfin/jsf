@@ -8,18 +8,18 @@ import java.io.Serializable;
 @ManagedBean
 @SessionScoped
 public class AuthBean implements Serializable{
-    private String loggedUserName;
 
+    private String loggedUsername;
 
-    public String getLoggedUserName() {
-        return loggedUserName;
+    public String getLoggedUsername() {
+        return loggedUsername;
     }
 
-    public void setLoggedUserName(String loggedUserName) {
-        this.loggedUserName = loggedUserName;
+    public void setLoggedUsername(String loggedUsername) {
+        this.loggedUsername = loggedUsername;
     }
 
-    public String logout(){
+    public String logout() {
         FacesContext.getCurrentInstance().getExternalContext().invalidateSession();
         return "index?faces-redirect=true";
     }

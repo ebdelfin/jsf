@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="org.glassfish:javax.faces:2.2.15" type="repository">
+    <properties maven-id="org.glassfish:javax.faces:2.2.15" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/javax.faces-2.2.15.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

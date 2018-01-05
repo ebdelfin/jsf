@@ -6,11 +6,13 @@ import apc.entjava.logindemo.services.LoginService;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 
+/**
+ * Created by student on 12/2/2017.
+ */
 @ManagedBean
 public class LoginBean {
-    private String userName;
+    private String loginName;
     private String password;
-
 
     @ManagedProperty(value = "#{authBean}")
     private AuthBean authBean;
@@ -23,17 +25,16 @@ public class LoginBean {
         this.authBean = authBean;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getLoginName() {
+        return loginName;
+    }
+
+    public void setLoginName(String loginName) {
+        this.loginName = loginName;
     }
 
     public String getPassword() {
         return password;
-    }
-
-
-    public void setUserName(String userName) {
-        this.userName = userName;
     }
 
     public void setPassword(String password) {
@@ -42,13 +43,13 @@ public class LoginBean {
 
     private LoginService loginService = new LoginDao();
 
-    public String login(){
-        if(loginService.login(userName, password)){
-            authBean.setLoggedUserName(userName);
+    public String login() {
+        if(loginService.login(loginName, password)) {
+            authBean.setLoggedUsername(loginName);
             return "protected/mainpage";
-        }else {
+        }
+        else {
             return "error";
         }
     }
-
 }

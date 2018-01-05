@@ -25,9 +25,12 @@
     <!-- url: The JDBC connection url for connecting to your MySQL database.
          -->
 
+    <!-- url: jdbc:mysql://localhost:3306/NameOfTheDatabase
+         -->
+
     <Resource name="jdbc/LoginDB" auth="Container" type="javax.sql.DataSource"
               maxActive="100" maxIdle="30" maxWait="10000"
               username="admin" password="passwordqwerty" driverClassName="com.mysql.cj.jdbc.Driver"
-              url="jdbc:mysql://localhost:3306/logindemo?&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=Asia/Manila"/>
+              url="jdbc:mysql://localhost:3306/jkem?&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=Asia/Manila"/>
 
 </Context>
