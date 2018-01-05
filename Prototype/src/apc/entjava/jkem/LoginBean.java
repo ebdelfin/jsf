@@ -45,7 +45,7 @@ public class LoginBean {
     public String login(){
         if(loginService.login(userName, password)){
             authBean.setLoggedUserName(userName);
-            return "protected/dashboard";
+            return "protected/mainDashboard";
         }else {
             return "error";
         }
