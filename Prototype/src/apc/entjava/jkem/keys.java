@@ -7,7 +7,7 @@ public class keys {
     private String question1;
     private String question2;
     private String question3;
-    private Integer score = 0;
+    private Integer score=0;
 
 
     public String getQuestion1() {
@@ -42,20 +42,17 @@ public class keys {
         this.score = score;
     }
 
-    public Integer submit() {
-        if (question1 =="A"){
-            score = score + 1;
-        }
-        if (question2=="A"){
-            score+=1;
-        }
-        if (question3=="A"){
-            score+=1;
-        }
-        return score;
-    }
-    public String result(){
-        String a = "Your score is " + score;
+    public String submit() {
+        switch (question1) {
+            case "A":  this.score = score + 1;
+                break;}
+        switch (question2) {
+            case "A":  this.score = score + 1;
+                break;}
+        switch (question3) {
+            case "A":  this.score = score + 1;
+                break;}
+
         return "result";
     }
 
