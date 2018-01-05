@@ -13,4 +13,8 @@ public class keys {
             public void setOption(String option) {
                 this.option = option;
             }
-        }
+    public String submit() {
+                return "missing";
+    }
+
+}
