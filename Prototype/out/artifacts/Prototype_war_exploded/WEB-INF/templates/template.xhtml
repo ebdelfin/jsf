@@ -23,7 +23,12 @@
 
     <ui:insert name="css"></ui:insert>
 
-
+    <script>
+        $(document).ready(function() {
+            var headerHeight = $("#section-header").outerHeight();
+            $("#section-body").css("padding-top", ""+headerHeight+"px");
+        });
+    </script>
 
 </h:head>
 <h:body>

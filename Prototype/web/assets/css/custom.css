@@ -6,6 +6,12 @@
 .navbar-brand, .navbar-nav{
     margin:0 !important;
 }
+#section-header{
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
 
 #section-header .navbar-brand, #section-header .navbar-nav, #section-header .dashboard{
     padding:0!important;
