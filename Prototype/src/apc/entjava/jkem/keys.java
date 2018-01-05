@@ -1,19 +1,14 @@
 package apc.entjava.jkem;
-import javax.faces.bean.ManagedBean;
 
+import javax.faces.bean.ManagedBean;
 
 @ManagedBean
 public class keys {
     private String question1;
     private String question2;
     private String question3;
-    private Integer score;
+    private Integer score = 0;
 
-    public keys(String question1, String question2, String question3){
-        this.question1 = question1;
-        this.question2 = question2;
-        this.question3 = question3;
-    }
 
     public String getQuestion1() {
         return question1;
@@ -48,13 +43,13 @@ public class keys {
     }
 
     public String submit() {
-        if (this.question1 =="A"){
-            score+= 1;
+        if (question1 =="A"){
+            score = score + 1;
         }
-        if (this.question2=="A"){
+        if (question2=="A"){
             score+=1;
         }
-        if (this.question3=="A"){
+        if (question3=="A"){
             score+=1;
         }
         return "result";
