@@ -44,16 +44,16 @@ public class keys {
 
     public String submit() {
         switch (question1) {
-            case "A":  this.score = score + 1;
+            case "B":  this.score = score + 1;
                 break;}
         switch (question2) {
-            case "A":  this.score = score + 1;
+            case "B":  this.score = score + 1;
                 break;}
         switch (question3) {
-            case "A":  this.score = score + 1;
+            case "C":  this.score = score + 1;
                 break;}
 
-        return "result";
+        return "quizResults";
     }
 
 }
