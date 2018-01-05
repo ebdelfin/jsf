@@ -4,148 +4,23 @@
                 xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
 
 
+    <ui:define name="css">
+        <link rel="stylesheet" href="/assets/css/normalize.css" />
+        <link rel="stylesheet" href="/assets/css/set1.css" />
+        <link rel="stylesheet" href="/assets/css/set2.css" />
+    </ui:define>
+
+
+
+
     <ui:define name="section-body">
         <div class="container mt-5">
             <div class="row mb-5">
                 <div class="col-md-6"><h1><i class="fa fa-user-circle" aria-hidden="true"></i>My Profile</h1></div>
                 <div class="col-md-6"><h1><i class="fa fa-bar-chart" aria-hidden="true"></i>My Progress</h1></div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="col mx-2 my-1 text-center border border-primary">
-                        <a href="/protected/course/1/dashboard.jsf">Course 1</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="col mx-2 my-1 text-center border border-primary">
-                        <a href="/protected/course/2/dashboard.jsf">Course 2</a>
-                    </div>
+            <ui:include src="/protected/snippets/availableCourses.xhtml"></ui:include>
 
-                </div>
-                <div class="col-md-4">
-                    <div class="col mx-2 my-1 text-center border border-primary">
-                        <a href="/protected/course/3/dashboard.jsf">Course 3</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="container-fluid bg-3 text-center">
-                <h3>Available Courses</h3><br></br>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <p>Some text..</p>
-                        <div class="grid">
-                            <figure class="effect-julia">
-                                <img src="Media/word.jpg" alt="img21"/>
-                                <figcaption>
-                                    <h2>Word<span>Basics</span></h2>
-                                    <div>
-                                        <p>Learn the Basic Navigation of Word</p>
-                                        <p>Know basic usable Shortcut Keys</p>
-                                        <p>Learn all the Functionalities</p>
-                                    </div>
-                                    <a href="#">View more</a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <p>Some text..</p>
-                        <div class="grid">
-                            <figure class="effect-julia">
-                                <img src="Media/excel.png" alt="img21"/>
-                                <figcaption>
-                                    <h2>Word<span>Basics</span></h2>
-                                    <div>
-                                        <p>Learn the Basic Navigation of Word</p>
-                                        <p>Know basic usable Shortcut Keys</p>
-                                        <p>Learn all the Functionalities</p>
-                                    </div>
-                                    <a href="#">View more</a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <p>Some text..</p>
-                        <div class="grid">
-                            <figure class="effect-julia">
-                                <img src="Media/powerpoint.png" alt="img21"/>
-                                <figcaption>
-                                    <h2>Word<span>Basics</span></h2>
-                                    <div>
-                                        <p>Learn the Basic Navigation of Word</p>
-                                        <p>Know basic usable Shortcut Keys</p>
-                                        <p>Learn all the Functionalities</p>
-                                    </div>
-                                    <a href="#">View more</a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div><br></br>
-
-            <div class="container-fluid bg-3 text-center">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <p>Some text..</p>
-                        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></img>
-                    </div>
-                    <div class="col-sm-3">
-                        <p>Some text..</p>
-                        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></img>
-                    </div>
-                    <div class="col-sm-3">
-                        <p>Some text..</p>
-                        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></img>
-                    </div>
-                    <div class="col-sm-3">
-                        <p>Some text..</p>
-                        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></img>
-                    </div>
-                </div>
-            </div><br></br>
-            <div class="container">
-                <h1>Use Bootstrap's carousel to show multiple items per slide.</h1>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="carousel slide multi-item-carousel" id="theCarousel">
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-responsive"></img></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" class="img-responsive"></img></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/9c27b0/000000" class="img-responsive"></img></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/673ab7/000000" class="img-responsive"></img></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/4caf50/000000" class="img-responsive"></img></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></img></a></div>
-                                </div>
-                                <!-- add  more items here -->
-                                <!-- Example item start:  -->
-
-                                <div class="item">
-                                    <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></img></a></div>
-                                </div>
-
-                                <!--  Example item end -->
-                            </div>
-                            <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                            <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </ui:define>
 </ui:composition>
