@@ -1,12 +1,33 @@
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
                 xmlns:ui="http://xmlns.jcp.org/jsf/facelets" xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
                 template="/WEB-INF/templates/template.xhtml" xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
 
     <ui:define name="section-body">
         <div class="container">
-            Quiz 1
+            <h1>Quiz 1</h1>
+            <br/>
+            <br/>
+        <h:form>
+        <h:selectOneRadio layout="pageDirection" value = "#{keys.option}"  >
+            Question 1:
+            <f:selectItem itemValue = "A" itemLabel = "Option A" />
+            <f:selectItem itemValue = "B" itemLabel = "Option B" />
+            <f:selectItem itemValue = "C" itemLabel = "Option C" />
+        </h:selectOneRadio><br/>
+        <h:selectOneRadio layout="pageDirection" value = "#{keys.option}"  >
+                Question 2:
+                <f:selectItem itemValue = "A" itemLabel = "Option A" />
+                <f:selectItem itemValue = "B" itemLabel = "Option B" />
+                <f:selectItem itemValue = "C" itemLabel = "Option C" />
+        </h:selectOneRadio><br/>
+
+
+            <h:commandButton value="Submit" action="#{keys.submit}" />
+        </h:form>
         </div>
     </ui:define>
+
 
 
 
