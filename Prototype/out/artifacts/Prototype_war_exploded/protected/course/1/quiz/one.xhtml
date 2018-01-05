@@ -5,44 +5,23 @@
 
     <ui:define name="section-body">
         <div class="container">
-            Quiz 1
-
+            <h1>Quiz 1</h1>
+            <br/>
+            <br/>
         <h:form>
         <h:selectOneRadio layout="pageDirection" value = "#{keys.option}"  >
             Question 1:
             <f:selectItem itemValue = "A" itemLabel = "Option A" />
             <f:selectItem itemValue = "B" itemLabel = "Option B" />
             <f:selectItem itemValue = "C" itemLabel = "Option C" />
-            <f:selectItem itemValue = "D" itemLabel = "Option D" />
         </h:selectOneRadio><br/>
         <h:selectOneRadio layout="pageDirection" value = "#{keys.option}"  >
                 Question 2:
                 <f:selectItem itemValue = "A" itemLabel = "Option A" />
                 <f:selectItem itemValue = "B" itemLabel = "Option B" />
                 <f:selectItem itemValue = "C" itemLabel = "Option C" />
-                <f:selectItem itemValue = "D" itemLabel = "Option D" />
         </h:selectOneRadio><br/>
-            <h:selectOneRadio layout="pageDirection" value = "#{keys.option}"  >
-            Question 3:
-            <f:selectItem itemValue = "A" itemLabel = "Option A" />
-            <f:selectItem itemValue = "B" itemLabel = "Option B" />
-            <f:selectItem itemValue = "C" itemLabel = "Option C" />
-            <f:selectItem itemValue = "D" itemLabel = "Option D" />
-        </h:selectOneRadio><br/>
-            <h:selectOneRadio layout="pageDirection" value = "#{keys.option}"  >
-            Question 4:
-            <f:selectItem itemValue = "A" itemLabel = "Option A" />
-            <f:selectItem itemValue = "B" itemLabel = "Option B" />
-            <f:selectItem itemValue = "C" itemLabel = "Option C" />
-            <f:selectItem itemValue = "D" itemLabel = "Option D" />
-        </h:selectOneRadio><br/>
-            <h:selectOneRadio layout="pageDirection" value = "#{keys.option}"  >
-            Question 5:
-            <f:selectItem itemValue = "A" itemLabel = "Option A" />
-            <f:selectItem itemValue = "B" itemLabel = "Option B" />
-            <f:selectItem itemValue = "C" itemLabel = "Option C" />
-            <f:selectItem itemValue = "D" itemLabel = "Option D" />
-        </h:selectOneRadio><br/>
+
 
             <h:commandButton value="Submit" action="#{keys.submit}" />
         </h:form>
