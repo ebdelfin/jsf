@@ -42,7 +42,7 @@ public class keys {
         this.score = score;
     }
 
-    public String submit() {
+    public Integer submit() {
         if (question1 =="A"){
             score = score + 1;
         }
@@ -52,6 +52,10 @@ public class keys {
         if (question3=="A"){
             score+=1;
         }
+        return score;
+    }
+    public String result(){
+        String a = "Your score is " + score;
         return "result";
     }
 
