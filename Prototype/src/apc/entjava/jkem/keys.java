@@ -1,6 +1,11 @@
 package apc.entjava.jkem;
 
+import apc.entjava.jkem.dataobjects.CourseDao;
+import apc.entjava.jkem.services.CourseService;
+
 import javax.faces.bean.ManagedBean;
+
+
 
 @ManagedBean
 public class keys {
@@ -8,7 +13,17 @@ public class keys {
     private String question2;
     private String question3;
     private Integer score=0;
+    private String username;
 
+    int courseId = 1;
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getUsername() {
+        return username;
+    }
 
     public String getQuestion1() {
         return question1;
@@ -42,6 +57,10 @@ public class keys {
         this.score = score;
     }
 
+
+    private CourseService courseService = new CourseDao();
+
+
     public String submit() {
         switch (question1) {
             case "B":  this.score = score + 1;
@@ -52,6 +71,14 @@ public class keys {
         switch (question3) {
             case "C":  this.score = score + 1;
                 break;}
+
+
+        if(courseService.apply(username, courseId)){
+            System.out.println("Success");
+        }
+
+
+
 
         return "quizResults";
     }

@@ -30,6 +30,8 @@
         });
     </script>
 
+    <ui:insert name="script"></ui:insert>
+
 </h:head>
 <h:body>
     <div id="section-header">
@@ -52,7 +54,7 @@
 
                     <h:panelGroup rendered="#{not empty loginBean.authBean.loggedUserName}">
 
-                        <li class="nav-item mx-2" id="greetUser">Hello, #{authBean.loggedUserName}!</li>
+                        <li class="nav-item mx-2" id="greetUser">Hello, <span id="loggedInUser">#{authBean.loggedUserName}</span>!</li>
 
                             <!-- Dropdown -->
                         <li class="nav-item dropdown mx-2">

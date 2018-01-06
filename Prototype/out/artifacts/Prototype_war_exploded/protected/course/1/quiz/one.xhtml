@@ -27,13 +27,25 @@
             <f:selectItem itemValue = "C" itemLabel = "Office Button" />
         </h:selectOneRadio><br/>
 
+        <div class="form-group" id="userName">
+             <h:inputText styleClass="form-control" value="#{keys.username}"/>
+         </div>
 
-            <h:commandButton value="Submit" action="#{keys.submit}" />
+            <h:commandButton value="Submit" action="#{keys.submit()}" />
+
+
         </h:form>
         </div>
     </ui:define>
 
-
+    <ui:define name="script">
+      <script>
+          $(document).ready(function() {
+              var username = $("#loggedInUser").text();
+              $("#userName input").val(username);
+          });
+      </script>
+    </ui:define>
 
 
 </ui:composition>
