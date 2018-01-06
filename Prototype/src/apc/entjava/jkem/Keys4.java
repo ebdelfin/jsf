@@ -3,7 +3,7 @@ package apc.entjava.jkem;
 import javax.faces.bean.ManagedBean;
 
 @ManagedBean
-public class keys {
+public class Keys4 {
     private String question1;
     private String question2;
     private String question3;
