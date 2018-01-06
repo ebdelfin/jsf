@@ -8,19 +8,19 @@
             <h1>Quiz 1</h1>
 
         <h:form>
-        <h:selectOneRadio layout="pageDirection" value = "#{keys.question1}"  >
+        <h:selectOneRadio layout="pageDirection" value = "#{keys1.question1}"  >
             What is the folder that Microsoft Word belongs to?
             <f:selectItem itemValue = "A" itemLabel = "Microsoft Accessories" />
             <f:selectItem itemValue = "B" itemLabel = "Microsoft Office" />
             <f:selectItem itemValue = "C" itemLabel = "Microsoft Programs" />
         </h:selectOneRadio><br/>
-        <h:selectOneRadio layout="pageDirection" value = "#{keys.question2}"  >
+        <h:selectOneRadio layout="pageDirection" value = "#{keys1.question2}"  >
             What is the upper most part of the Microsoft Word that displays document title?
                 <f:selectItem itemValue = "A" itemLabel = "Menu Bar" />
                 <f:selectItem itemValue = "B" itemLabel = "Title Bar" />
                 <f:selectItem itemValue = "C" itemLabel = "Document Title Bar" />
         </h:selectOneRadio><br/>
-            <h:selectOneRadio layout="pageDirection" value = "#{keys.question3}"  >
+            <h:selectOneRadio layout="pageDirection" value = "#{keys1.question3}"  >
             What do you called the icon on the upper left corner of your screen?
             <f:selectItem itemValue = "A" itemLabel = "Save Button" />
             <f:selectItem itemValue = "B" itemLabel = "Delete Button" />
@@ -34,6 +34,10 @@
             <h:commandButton value="Submit" action="#{keys.submit()}" />
 
 
+<<<<<<< HEAD
+=======
+            <h:commandButton value="Submit" action="#{keys1.submit}" />
+>>>>>>> f14f4b33683eeb844c2b3c1c9ffbe332c6f680f0
         </h:form>
         </div>
     </ui:define>

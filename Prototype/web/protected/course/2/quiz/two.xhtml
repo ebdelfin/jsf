@@ -1,0 +1,39 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets" xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                template="/WEB-INF/templates/template.xhtml" xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+
+    <ui:define name="section-body">
+        <div class="container">
+            <h1>Quiz 2</h1>
+
+            <h:form>
+                <h:selectOneRadio layout="pageDirection" value = "#{keys2.question1}"  >
+                    What is the folder that Microsoft Word belongs to?
+                    <f:selectItem itemValue = "A" itemLabel = "Microsoft Accessories" />
+                    <f:selectItem itemValue = "B" itemLabel = "Microsoft Office" />
+                    <f:selectItem itemValue = "C" itemLabel = "Microsoft Programs" />
+                </h:selectOneRadio><br/>
+                <h:selectOneRadio layout="pageDirection" value = "#{keys2.question2}"  >
+                    What is the upper most part of the Microsoft Word that displays document title?
+                    <f:selectItem itemValue = "A" itemLabel = "Menu Bar" />
+                    <f:selectItem itemValue = "B" itemLabel = "Title Bar" />
+                    <f:selectItem itemValue = "C" itemLabel = "Document Title Bar" />
+                </h:selectOneRadio><br/>
+                <h:selectOneRadio layout="pageDirection" value = "#{keys2.question3}"  >
+                    What do you called the icon on the upper left corner of your screen?
+                    <f:selectItem itemValue = "A" itemLabel = "Save Button" />
+                    <f:selectItem itemValue = "B" itemLabel = "Delete Button" />
+                    <f:selectItem itemValue = "C" itemLabel = "Office Button" />
+                </h:selectOneRadio><br/>
+
+
+                <h:commandButton value="Submit" action="#{keys2.submit}" />
+            </h:form>
+        </div>
+    </ui:define>
+
+
+
+
+</ui:composition>
