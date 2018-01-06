@@ -60,8 +60,8 @@
       <file leaf-file-name="five.xhtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/protected/course/5/quiz/five.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-65">
-              <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+            <state relative-caret-position="17">
+              <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -177,10 +177,10 @@
         <option value="$PROJECT_DIR$/web/protected/course/3/quiz/quizResults.xhtml" />
         <option value="$PROJECT_DIR$/web/protected/course/3/quiz/three.xhtml" />
         <option value="$PROJECT_DIR$/web/protected/course/4/quiz/four.xhtml" />
-        <option value="$PROJECT_DIR$/web/protected/course/5/quiz/five.xhtml" />
         <option value="$PROJECT_DIR$/web/protected/course/2/lesson/two.xhtml" />
         <option value="$PROJECT_DIR$/web/protected/course/4/quiz/quizResults.xhtml" />
         <option value="$PROJECT_DIR$/web/protected/course/3/lesson/three.xhtml" />
+        <option value="$PROJECT_DIR$/web/protected/course/5/quiz/five.xhtml" />
       </list>
     </option>
   </component>
@@ -197,7 +197,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="2576" />
@@ -475,15 +475,15 @@
       <workItem from="1515166662775" duration="555000" />
       <workItem from="1515167535400" duration="7220000" />
       <workItem from="1515180943511" duration="2311000" />
-      <workItem from="1515205785200" duration="3517000" />
+      <workItem from="1515205785200" duration="4148000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26731000" />
+    <option name="totallyTimeSpent" value="27362000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -909,8 +909,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/protected/course/5/quiz/five.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-65">
-          <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        <state relative-caret-position="17">
+          <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
           <folding />
         </state>
       </provider>
